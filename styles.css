@@ -1,24 +1,57 @@
-/* Todos los elementos de la página 
-Tamaño de fuente: 16px
-Familia de fuentes:Arial, Helvetica, sans-serif;
+/* Estilos generales */
 
-Todos los párrafos de la página 
-color: #555;
-
-Todos los párrafos contenidos en #primero 
-color: #369;
-
-Todos los enlaces de la página 
-color: #C30;
-
-Los elementos <em> contenidos en #primero 
-color: #0000BB;
-background-color: #FFFFCC;
-
-Todos los elementos <em> con la clase "especial" en toda la página 
-color: #FFFF00;
-background: #000000;
-
-Todos los elementos <span> contenidos en la clase "normal" 
-font-weight: bold;
-*/ 
+* {
+    box-sizing: border-box;
+    margin:  5;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos específicos */
+  
+  #contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #primero {
+    margin-bottom: 20px;
+  }
+  
+  #primero p {
+    color: #369;
+  }
+  
+  #primero a, 
+  #segundo a {
+    color: #C30;
+  }
+  
+  #primero em {
+    color: #0000BB;
+    background-color: #FFFFCC;
+  }
+  
+  #segundo p {
+    color: #555;
+  }
+  
+  #segundo em.especial {
+    color: #FFFF00;
+    background-color: #000000;
+  }
+  
+  #segundo span {
+    font-weight: bold;
+  }
